@@ -1,0 +1,28 @@
+Stemming and Lemmatization
+
+Stemming
+Reduces words to their root form by removing suffixes and prefixes.
+
+Example: running, runs, ran -> run
+
+Lemmatization 
+Reduces words to their dictionary form considering context and part of speech.
+
+Example: Studies -> Study
+
+
+
+---Stop Words---
+
+
+Bag of Words
+
+
+
+
+TF-IDF
+------
+https://medium.com/@makwana.dashang/term-frequency-and-inverse-document-frequency-in-nlp-caee77f49afd
+
+
+Create a table reference slide #30 to calculate Tf-IDF?

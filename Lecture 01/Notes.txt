@@ -1,0 +1,98 @@
+Lecture 01 - 2024.05.19
+------------------------
+
+Supervised vs Unsupervised
+
+Supervised - Labeled data
+Unsupervised - Unlabeled data
+
+
+
+Group 05
+---------
+
+1. What is NLP
+Natural Language Processing, is like teaching computers to understand and use human language, like how we talk or write.
+&
+NLP is Subset of Ai
+
+
+2.What are application of NLP
+Chatbots
+Language translation
+Search engines
+Text summarization
+
+What is Tokenization - breaking down a sentence into smaller pieces
+Eg-:
+Do you speak tamil language
+Toakn will be - Do, you, speak, tamil, language
+
+--------------
+-Assignment 01-
+--------------
+Write 5-10 sentances and apply tokenization, Bag of words, and Vocabulary.
+Print the results with Matrix and Vocabulary.
+
+
+#google cloab notebook
+https://colab.research.google.com/drive/1TffqkZwEUviDdNQubaxgQrPrePkObIiH#scrollTo=cZNCuAf-u7-u
+
+
+
+*** Word Tokenization Steps***
+------------------------------
+1. Import Libraries
+	nltk, spaCy or TensorFlow's Keras 
+
+2. Load Text
+	Load the text data that you want to tokenize. This could be from a file, a database, or any other source.
+
+3. Text Cleaning (Optional)
+	removing special characters
+	handling contractions
+	converting text to lowercase
+	
+4. Tokenization
+	Use a word tokenizer to break down the text into individual words.
+
+5. Tokenized Output
+	Obtain the tokenized output, which will be a list of words or tokens extracted from the text.
+
+
+
+---------------------------------------------------------------------------------------------------------------------
+from tensorflow.keras.preprocessing.text import Tokenizer
+
+# Step 2: Load Text
+text = "Tokenization is the process of breaking down text into smaller units called tokens."
+
+# Step 3: Text Cleaning (Optional)
+# No specific text cleaning is required in this example.
+
+# Step 4: Tokenization
+# Create a tokenizer object
+tokenizer = Tokenizer()
+
+# Fit the tokenizer on the text
+tokenizer.fit_on_texts([text])
+
+# Get the word index mapping
+word_index = tokenizer.word_index
+
+# Tokenize the text
+sequences = tokenizer.texts_to_sequences([text])
+
+# Step 5: Tokenized Output
+print("Word Index Mapping:")
+print(word_index)
+print("\nTokenized Output:")
+print(sequences)
+
+# Step 6: Analysis or Further Processing
+# You can perform further analysis or processing on the tokenized output as needed.
+
+# Step 7: Model Training or Application
+# Use the tokenized text as input for training or applying machine learning models.
+---------------------------------------------------------------------------------------------------------------------
+

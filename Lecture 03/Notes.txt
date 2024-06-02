@@ -1,0 +1,23 @@
+TF-IDF of The? 
+Breakout room Task:
+Calculate the tf-idf score of the term “ T”
+The appears one times in first document
+Documents =3 
+T appears 4 times in 3 documents
+
+
+TF = #T appears in the document / #Total terms in the document
+TF = 1/10 = 0.1
+
+DF = 3
+
+IDF = log((Total #of documents)/#of documents containign term T)
+IDF = log(3/3) = log(1) = 0
+
+TF-IDF = TF * IDF
+TF-IDF = 0.1 * 0 = 0
+
+
+
+
+

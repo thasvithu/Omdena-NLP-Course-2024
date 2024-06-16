@@ -1,0 +1,11 @@
+Assignment 02
+Feature Engineering for NLP in python Course - Data Camp
+
+
+Resume Screening Project
+-------------------------
+1. Data Downloading & Exploring
+2. Data Cleaning & Preparing for analysis
+3. Encoding and Splitting
+4. Splitting
+5. Modeling (KNeighbors Classifier)
